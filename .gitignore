@@ -1,1 +1,15 @@
 *.geany
+tlp
+tlp-func-base
+tlp-rdw
+tlp-rdw-nm
+tlp-rdw-udev
+tlp-rdw.rules
+tlp-readconfs
+tlp-rf
+tlp-run-on
+tlp-stat
+tlp-usb-udev
+tlp.rules
+tlp.service
+tlp.upstart
