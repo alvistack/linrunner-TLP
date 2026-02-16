@@ -1,0 +1,7 @@
+*.substvars
+*debhelper*
+.debhelper
+files
+tlp
+tlp-rdw
+tmp

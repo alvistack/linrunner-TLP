@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_build:
+	dh_auto_build -- \
+		TLP_SYSD=/lib/systemd/system \
+		TLP_ULIB=/lib/udev
+
+override_dh_auto_install:
+	dh_auto_install -- \
+		TLP_NMDSP=/usr/lib/NetworkManager/dispatcher.d \
+		TLP_NO_INIT=1 \
+		TLP_SDSL=/lib/systemd/system-sleep \
+		TLP_SYSD=/lib/systemd/system \
+		TLP_ULIB=/lib/udev \
+		TLP_WITH_ELOGIND=0 \
+		TLP_WITH_SYSTEMD=1 \
+		install install-man install-man-rdw
+
+override_dh_auto_clean:
+
+override_dh_auto_test:
+
+%:
+	dh $@
