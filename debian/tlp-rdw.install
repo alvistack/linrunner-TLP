@@ -1,0 +1,7 @@
+lib/udev/rules.d/85-tlp-rdw.rules
+lib/udev/tlp-rdw-udev
+usr/bin/tlp-rdw
+usr/lib/NetworkManager/dispatcher.d/99tlp-rdw-nm
+usr/share/bash-completion/completions/tlp-rdw
+usr/share/fish/vendor_completions.d/tlp-rdw.fish
+usr/share/man/man8/tlp-rdw.8
